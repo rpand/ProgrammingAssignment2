@@ -1,6 +1,8 @@
-## The functions below are used to cache the inverse of a matrix.
+## The functions below are used to recive a matrix
+## calculate its inverse and cache the inverse.
 ## 
-## This function creates a special "matrix" object that can cache its inverse
+## The makeCacheMatrix() function creates a special "matrix" object 
+## that can cache its inverse
 
 makeCacheMatrix <- function(mymat = matrix()) {
     #Initialize variables
@@ -13,12 +15,12 @@ makeCacheMatrix <- function(mymat = matrix()) {
         mymat
     }
     
-    #Set inverse
+    #Set the inverse of the matrix
     setInverse <- function (inverse) {
         inv <<- inverse
     }
     
-    #Get Inverse
+    #Get the Inverse of the matrix
     getInverse <- function() {
         inv
     }
